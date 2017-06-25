@@ -1,5 +1,8 @@
+server.port: ${PORT:9404}
 spring:
-  mvc:
-    static-path-pattern: /**
-
-server.port: 8081
+  application:
+    name: hystrix-dashboard
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9401/eureka/
